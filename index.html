@@ -1,10 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 <head>
-  <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <title>Aashraya | Web Developer & Sports Enthusiast</title>
+    <meta name="author" content="Aashraya">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Personal portfolio of Aashraya, a Web Developer based in Nepal, blending digital craftsmanship with a passion for sports.">
+    
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/icon/icomoon/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    
+    <link rel="shortcut icon" href="assets/images/logo/favicon.svg">
 </head>
-<body>
-  <h1>Hello, my website is live 🚀</h1>
-  <p>This domain finally works.</p>
+
+<body class="counter-scroll">
+    <canvas class="cursor-trail d-none d-xl-block" id="trail"></canvas>
+
+    <div class="preloader overflow-hidden">
+        <div class="site-name"><span>AASHRAYA</span></div>
+        <div class="preloader-gutters">
+            <div class="bar"><div class="inner-bar"></div></div>
+            <div class="bar"><div class="inner-bar"></div></div>
+            <div class="bar"><div class="inner-bar"></div></div>
+            <div class="bar"><div class="inner-bar"></div></div>
+            <div class="bar"><div class="inner-bar"></div></div>
+            <div class="bar"><div class="inner-bar"></div></div>
+            <div class="bar"><div class="inner-bar"></div></div>
+            <div class="bar"><div class="inner-bar"></div></div>
+        </div>
+    </div>
+
+    <main id="wrapper">
+        <header class="tf-header style-2">
+            <div class="header-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-md-1">
+                            <a href="index.html" class="logo-site">
+                                <span class="h4 fw-bold text-white">A_</span>
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-2 ms-xl-auto d-none d-md-block">
+                            <ul class="tf-list vertical">
+                                <li> <a href="#workScroll" class="link text-caption">PROJECTS</a></li>
+                                <li> <a href="#serviceScroll" class="link text-caption">SERVICES</a></li>
+                                <li> <a href="#aboutScroll" class="link text-caption">BIO</a></li>
+                                <li> <a href="#contactScroll" class="link text-caption">CONTACT</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3 col-md-2 d-none d-sm-block ms-auto ms-xl-0">
+                            <div class="header-contact">
+                                <a href="mailto:hello@aashraya.com.np" class="link text-caption">HELLO@AASHRAYA.COM.NP</a>
+                                <p class="text-caption text-utc">
+                                    <i class="icon icon-globe"></i> KATHMANDU, NEPAL
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="section-hero-v2 flat-spacing">
+            <div class="overlay"></div>
+            <div class="bg-video">
+                <video muted autoplay loop playsinline>
+                    <source src="assets/images/video/wave-bg.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container">
+                <div class="image-wrap">
+                    <div class="img-item image-1">
+                        <img class="effectFade fadeDown" loading="lazy" width="400" height="600" src="assets/images/section/aashraya-main.jpg" alt="Aashraya">
+                    </div>
+                    <div class="img-item-2">
+                         <h1 class="text-display-1 fw-bold text-white opacity-25">AASHRAYA</h1>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <ul class="tf-list text-caption letter-space--1 fw-medium scroll-fadeUp2">
+                        <li><a href="#" class="link">WEB DEVELOPER</a></li>
+                        <li>/</li>
+                        <li><a href="#" class="link">FOOTBALL FANATIC</a></li>
+                        <li>/</li>
+                        <li><a href="#" class="link">CRICKET & TENNIS</a></li>
+                    </ul>
+                    <div class="effectFade fadeUp">
+                        <a href="#contactScroll" class="tf-btn style-2 style-fill-white animate-btn animate-dark">
+                            <span class="text-caption letter-space--1 fw-medium">KICKOFF A PROJECT</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="section-selected-work-v2 flat-spacing stack-element" id="workScroll">
+            <div class="s-header d-block overflow-hidden">
+                <div class="infiniteSlide infiniteSlide_select_work" data-clone="5">
+                    <p class="text-display-1 letter-space--3 fw-semibold">Highlights / Match Day</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="work-list stack-element-main position-relative">
+                    <div class="element">
+                        <a href="#" class="wg-work">
+                            <div class="work-image">
+                                <img loading="lazy" width="1296" height="648" src="assets/images/section/project-1.jpg" alt="Project One">
+                            </div>
+                            <div class="work-content">
+                                <div class="work_top">
+                                    <h5 class="letter-space--2">Digital Pitch_</h5>
+                                    <ul class="tf-list vertical text-end">
+                                        <li class="text-white-64">Category</li>
+                                        <li>E-Commerce</li>
+                                    </ul>
+                                </div>
+                                <div class="work_bottom">
+                                    <h5 class="letter-space--2">2026</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-about-me-v2 flat-spacing" id="aboutScroll">
+            <div class="container">
+                <div class="about-main flat-spacing-bottom">
+                    <div class="content">
+                        <div class="top text-display-1 fw-semibold letter-space--3">
+                            <p class="effectFade fadeUp">Namaste,</p>
+                            <p class="effectFade fadeUp" data-delay="0.1">I'm Aashraya<span class="text-primary">_</span></p>
+                        </div>
+                        <h5 class="text-color-change letter-space--2 fw-normal">
+                            I am a Web Developer based in Nepal who treats code like a championship match. 
+                            Whether I'm debugging a site or playing <strong>Football</strong>, <strong>Cricket</strong>, or <strong>Tennis</strong>, 
+                            I bring speed, strategy, and teamwork to everything I do.
+                        </h5>
+                    </div>
+                </div>
+                <div class="br-line d-flex"></div>
+                <div class="award-main mt-5">
+                    <ul class="experience-list overflow-hidden w-100">
+                        <li>Stats & Experience</li>
+                        <li class="effectFade fadeRight">
+                            <p class="exp_name">Full Stack Mastery (React/Node)</p>
+                            <p class="exp_year">Current</p>
+                        </li>
+                        <li class="effectFade fadeRight">
+                            <p class="exp_name">Freelance Developer - Nepal</p>
+                            <p class="exp_year">2023 - Present</p>
+                        </li>
+                        <li class="effectFade fadeRight">
+                            <p class="exp_name">Local Club Sports Engagement</p>
+                            <p class="exp_year">Passion</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-contact flat-spacing" id="contactScroll">
+            <div class="container text-center">
+                <h2 class="text-display-2 fw-semibold mb-5">READY TO KICKOFF?</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <h5 class="fw-normal mb-4">Let's build something as exciting as a last-minute goal.</h5>
+                        <a href="mailto:hello@aashraya.com.np" class="tf-btn style-2">SEND A MESSAGE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer py-4 bg-surface">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="text-caption mb-0">© 2026 AASHRAYA - NEPAL</p>
+                    <ul class="tf-list horizontal gap-20">
+                        <li><a href="#" class="link text-caption">LINKEDIN</a></li>
+                        <li><a href="#" class="link text-caption">GITHUB</a></li>
+                        <li><a href="#" class="link text-caption">INSTAGRAM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <button id="goTop"><span class="icon icon-arrow-caret-right"></span></button>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/countto.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
